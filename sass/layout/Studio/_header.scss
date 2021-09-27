@@ -1,7 +1,8 @@
 .header-container {
   display: flex;
   align-items: center;
-  margin-left: auto;
+  // margin-left: auto;
+  justify-content: space-between;
 }
 
 .header {
@@ -17,13 +18,13 @@
 .page-header-container__logo {
   text-decoration: none;
   list-style: none;
-  margin-right: 93px;
+  // margin-right: 93px;
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
 .page-header-container__button {
-  margin-left: auto;
+  // margin-left: auto;
   width: 40px;
   height: 40px;
   background-color: var(--title);
@@ -82,7 +83,7 @@
 
 .mob-menu {
   width: 100vh;
-
+  padding: 48px 83px 48px 40px;
   background-color: #ffffff;
   position: fixed;
 }
@@ -92,6 +93,82 @@
   height: 40px;
   border: none;
   background-color: #ffffff;
+}
+
+.mob-menu__link {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.mob-menu__nav {
+  text-decoration: none;
+  list-style: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: calc(47 / 40);
+  letter-spacing: 0.02em;
+  color: var(--text);
+}
+
+.mob-menu__contacts {
+  margin-top: 302px;
+}
+
+.mob-menu__item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.mob-menu__phone {
+  text-decoration: none;
+  list-style: none;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: calc(40 / 34);
+  letter-spacing: 0.02em;
+  color: var(--logo);
+}
+
+.mob-menu__mail {
+  text-decoration: none;
+  list-style: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.02em;
+
+  color: var(--main-text-color);
+}
+
+.mob-menu-soc {
+  display: flex;
+  margin-top: 64px;
+}
+
+.mob-menu-soc__item {
+  list-style: none;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  letter-spacing: 0.02em;
+  color: var(--logo);
+}
+
+.mob-menu-soc__link {
+  display: flex;
+  align-items: center;
+  &:not(:last-child)::after {
+    content: "";
+    width: 22px;
+    height: 0;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 }
 
 // .nav-menu-list__item {
