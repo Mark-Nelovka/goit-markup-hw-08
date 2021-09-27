@@ -1,0 +1,49 @@
+.main-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.btn-second {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text);
+  border: none;
+  background: #f5f4fa;
+  border-radius: 4px;
+  &:hover,
+  &:focus {
+    background-color: var(--logo);
+  }
+}
+
+.menu-content {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-nav:not(:last-child) {
+  padding-right: 8px;
+}
+
+.item-menu {
+  font-weight: 500;
+  font-size: 14px;
+  padding: 6px 22px;
+  line-height: 1.62;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  text-decoration: none;
+  list-style: none;
+  transition-duration: var(--time-animation);
+  transition-timing-function: var(--time-animation);
+  &:hover,
+  &:focus {
+    color: var(--title);
+  }
+}

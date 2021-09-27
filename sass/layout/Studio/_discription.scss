@@ -1,0 +1,50 @@
+.discription-card {
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.discription-image {
+  margin: 25px 100px;
+}
+
+.discription {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+}
+
+.discription-a {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.discription-list {
+  width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.discription-chapter {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.discription-text {
+  font-weight: 400px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  margin-top: 0;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}

@@ -1,0 +1,83 @@
+.command {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+  letter-spacing: 0.03em;
+  color: var(--text);
+}
+
+.discription__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  letter-spacing: 0.03em;
+  color: var(--text);
+}
+
+.discription__profession {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  margin-bottom: 16px;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+.container-soc__soc {
+  width: 44px;
+  height: 44px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.container-soc__link-soc {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition-duration: var(--time-animation);
+  transition-timing-function: var(--time-animation);
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+  }
+}
+
+.container-soc__icon-soc {
+  fill: #afb1b8;
+  .container-soc__link-soc:hover &,
+  .container-soc__link-soc:focus & {
+    fill: #ffffff;
+  }
+}
+
+.container-soc {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.section-command {
+  padding-bottom: 94px;
+  padding-top: 94px;
+  background: #f5f4fa;
+}
+
+.discription__card-command {
+  border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
