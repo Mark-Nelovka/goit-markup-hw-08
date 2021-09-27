@@ -1,30 +1,50 @@
 .discription-card {
-  width: 270px;
-  height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
-}
-
-.discription-image {
-  margin: 25px 100px;
+  padding: 25px 190px;
+  @media screen and (min-width: 768px) {
+    padding: 25px 142px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 25px 100px;
+  }
 }
 
 .discription {
-  display: flex;
   text-decoration: none;
   list-style: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .discription-a {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .discription-list {
-  width: 270px;
+  width: 450px;
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
   }
 }
 
@@ -35,8 +55,12 @@
   letter-spacing: 0.03em;
   margin-top: 0;
   margin-bottom: 10px;
+  text-align: center;
   text-transform: uppercase;
   color: var(--text);
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
 
 .discription-text {

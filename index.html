@@ -21,17 +21,23 @@
 <body>
     <header class="header">
         <div class="container header-container">
-            <nav class="page-header-container">
+             <nav class="page-header-container">
                 <a class="page-header-container__logo" lang="en" href="./index.html"><span class="logo-first">Web</span><span
                         class="logo-second">Studio</span></a>
+            </nav>
+            <button type="button" class="page-header-container__button">
+                <svg width="24" height="16">
+                    <use href="./images/sprite/Sprite.svg#icon-nav-menu"></use>
+                </svg>
+            </button>
 
-                <ul class="nav-menu-list">
+                <!-- <ul class="nav-menu-list">
                     <li class="nav-menu-list__link" ><a class="nav-menu-list__item current" href="./index.html">Студия</a></li>
                     <li class="nav-menu-list__link" ><a class="nav-menu-list__item" href="./portfolio.html">Портфолио</a></li>
                     <li class="nav-menu-list__link" ><a class="nav-menu-list__item" href="">Контакты</a></li>
-                </ul>
-            </nav>
-            <div class="header-right">
+                </ul> -->
+            
+            <!-- <div class="header-right">
                     <li class="link">
                         <a class="link__item-connect" href="mailto:info@devstudio.com">info@devstudio.com
                             <svg class="link__header-icon" width="16" height="12">
@@ -52,7 +58,19 @@
                     </li>
                 
                 
-            </div>
+            </div> -->
+        </div>
+        <div class="mob-menu">
+            <button type="button" class="mob-menu__button">
+                <svg class="mob-menu__close" width="19"  height="19">
+                    <use href="./images/sprite/Sprite.svg#icon-Close"></use>
+                </svg>
+            </button>
+            <ul class="mob-menu__list">
+                <li class="mob-menu__link">Студия</li>
+                <li class="mob-menu__link">Портфолио</li>
+                <li class="mob-menu__link">Контакты</li>
+            </ul>
         </div>
     </header>
 
@@ -135,10 +153,18 @@
         <section class="section-command">
             <div class="container">
                 <h2 class="command">Наша команда</h2>
-                <ul class="discription">
+                <ul class="discription__command">
                     <div class="discription__card-command">
                         <li>
-                            <img src="./images/img-command/img1.jpg" width="270" height="260" alt="Сотрудник компании">
+
+                            <picture>
+                                <source srcset="./images/img-command/Desctop/Com-D1x.jpg 1x, ./images/img-command/Desctop/Com-D2x.jpg 2x"
+                                    media="(min-width:1200px)">
+                                    <source srcset="./images/img-command/Tablet/img-tab1x.jpg 1x, ./images/img-command/Tablet/img-tab2x.jpg 2x" media="(min-width:768px)">
+                                    <source srcset="./images/img-command/Mobile/Com-mob1x-min.jpg 1x, ./images/img-command/Mobile/Com-mob2x-min.jpg 2x"
+                                        media="(min-width:480px)">
+                                <img src="./images/img-command/Mobile/Com-mob1x-min.jpg" alt="Сотрудник компании">
+                            </picture>
                             <h3 class="discription__name">Игорь Демьяненко</h3>
                             <p class="discription__profession" lang="en">Product Designer</p>
                             <ul class="container-soc tt-decor">
@@ -175,7 +201,16 @@
                     </div>
                     <div class="discription__card-command">
                         <li>
-                            <img src="./images/img-command/img2.jpg" width="270" height="260" alt="Сотрудник компании">
+                        
+                            <picture>
+                                <source srcset="./images/img-command/Desctop/img2.jpg 1x, ./images/img-command/Desctop/img2-D2x.jpg 2x"
+                                    media="(min-width:1200px)">
+                                <source srcset="./images/img-command/Tablet/img1-tab1x.jpg 1x, ./images/img-command/Tablet/img1-tab2x.jpg 2x"
+                                    media="(min-width:768px)">
+                                <source srcset="./images/img-command/Mobile/Com1-mob1x-min.jpg 1x, ./images/img-command/Mobile/Com1-mob2x-min.jpg 2x"
+                                    media="(min-width:480px)">
+                                <img src="./images/img-command/Mobile/Com1-mob1x-min.jpg" alt="Сотрудник компании">
+                            </picture>
                             <h3 class="discription__name">Ольга Репина</h3>
                             <p class="discription__profession" lang="en">Frontend Developer</p>
                             <ul class="container-soc tt-decor">
@@ -212,7 +247,16 @@
                     </div>
                     <div class="discription__card-command">
                         <li>
-                            <img src="./images/img-command/img3.jpg" width="270" height="260" alt="Сотрудник компании">
+                            <picture>
+                                <source srcset="./images/img-command/Desctop/img3.jpg 1x, ./images/img-command/Desctop/img3-D2x.jpg 2x"
+                                    media="(min-width:1200px)">
+                                <source srcset="./images/img-command/Tablet/img2-tab1x.jpg 1x, ./images/img-command/Tablet/img2-tab2x.jpg 2x"
+                                    media="(min-width:768px)">
+                                <source
+                                    srcset="./images/img-command/Mobile/Com2-mob1x-min.jpg 1x, ./images/img-command/Mobile/Com2-mob2x-min.jpg 2x"
+                                    media="(min-width:480px)">
+                                <img src="./images/img-command/Mobile/Com2-mob1x-min.jpg" alt="Сотрудник компании">
+                            </picture>
                             <h3 class="discription__name">Николай Тарасов</h3>
                             <p class="discription__profession" lang="en">Marketing</p>
                             <ul class="container-soc tt-decor">
@@ -249,7 +293,16 @@
                     </div>
                     <div class="discription__card-command">
                         <li>
-                            <img src="./images/img-command/img4.jpg" width="270" height="260" alt="Сотрудник компании">
+                            <picture>
+                                <source srcset="./images/img-command/Desctop/img4.jpg 1x, ./images/img-command/Desctop/img4-D2x.jpg 2x"
+                                    media="(min-width:1200px)">
+                                <source srcset="./images/img-command/Tablet/img3-tab1x.jpg 1x, ./images/img-command/Tablet/img3-tab2x.jpg 2x"
+                                    media="(min-width:768px)">
+                                <source
+                                    srcset="./images/img-command/Mobile/Com3-mob1x-min.jpg 1x, ./images/img-command/Mobile/Com3-mob2x-min.jpg 2x"
+                                    media="(min-width:480px)">
+                                <img src="./images/img-command/Mobile/Com3-mob1x-min.jpg" alt="Сотрудник компании">
+                            </picture>
                             <h3 class="discription__name">Михаил Ермаков</h3>
                             <p class="discription__profession" lang="en">UI Designer</p>
                             <ul class="container-soc tt-decor">
@@ -343,7 +396,7 @@
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-logo-contact">
-                <a class="logo-footer" lang="en" href="./index.html"><span class="logo-first">Web</span><span
+                <a class="logo-footer" lang="en" href="./index.html"><span class="logo-footer-first">Web</span><span
                         class="logo-second-w">Studio</span></a>
                 <ul class="footer-contact-list">
                     <li class="footer-contact-list__footer-contact"><a class="footer-contact-list__map-item" href="https://goo.gl/maps/ncEjKkmwe7wm9tHb9"
@@ -353,7 +406,7 @@
                     <li class="footer-contact-list__footer-contact"><a class="footer-contact-list__tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="footer-soc-contact">
                 <h3 class="footer-text">ПРИСОЕДИНЯЙТЕСЬ</h3>
                 <ul class="footer-soc tt-decor">
                     <li class="footer-soc__footer-list">
@@ -385,7 +438,7 @@
                         </a>
                     </li>
                 </ul>
-                </div>
+            </div>
                 <div class="footer-link-second">
                     <h3 class="footer-text-subscribe">Подпишитесь на рассылку</h3>
                     <form class="footer-subscribe">
