@@ -1,6 +1,10 @@
 .main-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .btn-second {
   font-family: Roboto;
@@ -22,21 +26,33 @@
 }
 
 .menu-content {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .menu-nav:not(:last-child) {
-  padding-right: 8px;
+  margin-right: 8px;
+  margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .item-menu {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   padding: 6px 22px;
   line-height: 1.62;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
   color: var(--text);
   text-decoration: none;
   list-style: none;
