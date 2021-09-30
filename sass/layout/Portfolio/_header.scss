@@ -298,6 +298,11 @@
   }
 }
 
+.mob-menu-down {
+  position: absolute;
+  bottom: 50px;
+}
+
 .mob-menu.is-hidden {
   opacity: 0;
   visibility: hidden;
